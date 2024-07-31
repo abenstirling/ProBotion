@@ -1,0 +1,17 @@
+{reg: [
+{bits: 4, name: 'RA', attr: ['r0-r15', 'acc (r15)', 'Optional'], type: 2},
+{bits: 5, name: 'Op Code', attr: ''}
+], config: {hspace: 4}}
+
+
+{reg: [
+{bits: 6, name: 'Signed Imm', attr: ['± Integer','± Relative Address'], type: 3},
+{bits: 3, name: 'Op Code', attr: ''}
+], config: {hspace: 4}}
+
+{reg: [
+    {bits: 3, name: 'Imm', attr: ['Singaling State', 'Bit Select'], type: 3},
+    {bits: 1, name: 'Direction', attr: ['0b0', 'Shift Right?'], type: 2},
+    {bits: 1, name: 'Reserved', attr: ['0b000'], type: 1},
+    {bits: 4, name: 'Op Code', attr: ''}
+    ], config: {hspace: 4}}
